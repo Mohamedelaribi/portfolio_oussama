@@ -1,5 +1,11 @@
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
 .App {
+  background-color: #19191A;
   text-align: center;
+  height: 200vh;
+
 }
 
 .App-logo {
@@ -19,14 +25,79 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.navBar{
+  background-color: white;
+  height: 9vh;
+  font-family: 'Karla';
+  opacity: 40%;
+  padding: 0px 70px;
+  display: flex;
+  position: absolute;
+  width: 89.6%;
+  top: 0px;
+}
+
+.listNavBar{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.listNavBar a{
+  text-decoration: none;
+  color: black;
+  font-size:17px;
+  font-family: 'Karla';
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.header{
+  width: 100%;
+  height: 96vh;
+  }
+
+.header video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.logo{
+  width: 15vh;
+}
+
+.headerTitle{
+  font-family: 'EB Garamond';
+  position: absolute;
+  display: flex;
+  height: 40%;
+  top: 0;
+  justify-content: center;
+  left: 150px;
+  align-items: center;
+}
+
+.headerTitle h1{
+  color: white;
+  font-size: 58px;
+  font-weight: 500;
+}
+
 
 @keyframes App-logo-spin {
   from {
