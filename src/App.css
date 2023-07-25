@@ -1,11 +1,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+  :root{
+    --TitleFonts:'DM Serif Display';
+    --subTitle:'karla'
+  }
 .App {
   background-color: #19191A;
   text-align: center;
   height: 200vh;
-
 }
 
 .App-logo {
@@ -40,10 +42,9 @@
   height: 9vh;
   font-family: 'Karla';
   opacity: 40%;
-  padding: 0px 70px;
   display: flex;
   position: absolute;
-  width: 89.6%;
+  width:100%;
   top: 0px;
 }
 
@@ -52,6 +53,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 0px 70px;
   justify-content: space-evenly;
 }
 
@@ -82,21 +84,75 @@
 }
 
 .headerTitle{
-  font-family: 'EB Garamond';
+  font-family: var(--TitleFonts);
   position: absolute;
   display: flex;
-  height: 40%;
-  top: 0;
+  flex-direction: column;
+  top: 45vh;
   justify-content: center;
-  left: 150px;
+  left: 40px;
   align-items: center;
+  color:  #e1dbcc;
 }
 
 .headerTitle h1{
-  color: white;
-  font-size: 58px;
+  font-size: 4.2em;
   font-weight: 500;
+  letter-spacing: 9.6px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  margin: 0px;
 }
+.headerTitle p{
+  font-family: var(--subTitle);
+  max-width: 650px;
+  letter-spacing: 3px;
+  text-align: start;
+}
+
+.aboutUs{
+  background-color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 3em;
+  width: 100%;
+  display: flex;
+  /* text-align: start; */
+}
+
+
+.leftContent{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.imageShodow{
+  width: 100%;
+}
+
+.imageShodow img{
+  width: 300px;
+  height: 480px;
+  flex-shrink: 0;
+  box-shadow: -13px 10px 0px #C6C5C5;
+}
+.imageShodow img:hover{
+  transform: translateY(-5px);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  box-shadow: -13px 20px 4px #C6C5C5;
+  
+}
+
+
+
+
+
+
+
 
 
 @keyframes App-logo-spin {
