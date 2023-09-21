@@ -3,6 +3,12 @@ body{
   list-style: none;
   text-decoration: none;
   padding: 0px;
-  position: relative;
-  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: blue; 
+  border-radius: 10px;
 }
